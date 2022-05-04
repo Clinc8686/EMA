@@ -38,4 +38,12 @@ public class StartActivity extends AppCompatActivity implements TextToSpeech.OnI
             tts.speak("Gib einen Text ein", TextToSpeech.QUEUE_FLUSH, null, "Test");
         }
     }
+
+    public void changeLanguage(View view) {
+        if (tts.getVoice().getLocale() == Locale.GERMAN) {
+            tts.setLanguage(Locale.ENGLISH);
+        } else {
+            tts.setLanguage(Locale.GERMAN);
+        }
+    }
 }

@@ -35,12 +35,24 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="216dp"
         android:backgroundTint="#FF5722"
+        android:onClick="clicked"
+        android:text="@string/speak"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextZuSprechen"
-        app:layout_constraintVertical_bias="0.206"
-        android:onClick="clicked"/>
+        app:layout_constraintVertical_bias="0.549" />
+
+    <Button
+        android:id="@+id/btnChangeLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnVorlesen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextZuSprechen"
+        android:onClick="changeLanguage"
+        android:text="@string/changeLanguage"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

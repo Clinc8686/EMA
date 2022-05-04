@@ -2,4 +2,6 @@
     <string name="app_name">EMA</string>
     <string name="hello">Hello World!</string>
     <string name="insert">Text eingeben</string>
+    <string name="speak">speak</string>
+    <string name="changeLanguage">change Language</string>
 </resources>
